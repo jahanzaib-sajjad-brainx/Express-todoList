@@ -5,7 +5,7 @@ const controlerclass=require('../controller/controlerClass')
 router.post('/add-task', controlerclass.addTask);
 router.get('/get-tasks',controlerclass.getTasks );
 router.get('/get-task',controlerclass.getTask);
-router.delete('/delete-task',controlerclass.deleteTask);
+router.delete('/delete-task/:id',controlerclass.deleteTask);
 router.post('/update-task/:id',controlerclass.updateTask);
 router.post('/task-completed/:id',controlerclass.taskcompleted);
 
